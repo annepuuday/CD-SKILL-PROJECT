@@ -1,0 +1,42 @@
+{% extends 'basic.html' %}
+{% block title %} Job Portal {% endblock %}
+{% block home %} active {% endblock %}
+{% block css %}
+{% endblock %}
+{% block body %}
+{% load static %}
+<style>
+    .container-fluid {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .container-fluid img {
+        width: 100%;
+        height: -1px;
+        display: block;
+    }
+
+    .full-screen-image {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+        display: block; 
+    }
+</style>
+<div class="container-fluid">
+    <!-- <img src="{% static 'Recruitment Vector.jpeg' %}" alt="" class="full-screen-image"> -->
+    <!-- <img src="https://img.freepik.com/free-vector/man-search-hiring-job-online-from-laptop_1150-52728.jpg" alt="Online Image" class="full-screen-image"> -->
+    <img src="https://unblast.com/wp-content/uploads/2020/05/Job-Hunting-Illustration.jpg" alt="Online Image" width="100%" height="670px">
+</div>
+<section>
+<footer id ="sticky-footer" class="flex-shrink-0 py-2" style="background-color:#416067">
+  <div class = "container text-center">
+      <small><font color="white"><b>Copyright &copy; K L University. All rights reserved</b></font></small>
+  </div>
+</footer>
+</section>
+{% endblock %}
